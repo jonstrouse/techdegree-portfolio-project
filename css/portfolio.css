@@ -1,0 +1,245 @@
+body {
+  font-family: Ubuntu;
+}
+
+
+/* navbar styles */
+.navbar {
+  padding-top: 1rem;
+  background: rgb(20,55,70);
+  transition: .5s ease;
+}
+#logo {
+  width: 40px;
+  margin-right: 2rem;
+}
+.navbar-brand {
+  letter-spacing: .2em;
+}
+.nav-item:first-of-type {
+  margin-top: 1rem;
+}
+.nav-item {
+  font-size: 1.2em;
+}
+
+
+/* fixed background for jumbotron and projects*/
+.jumbotron,
+#projects {
+  /* credit svgbackgrounds.com */
+  background-color: #3c543c;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3ClinearGradient id='a' x1='1' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%233c543c'/%3E%3Cstop offset='.5' stop-color='%23164a53'/%3E%3Cstop offset='1' stop-color='%2337374f'/%3E%3C/linearGradient%3E%3Cpattern id='p' width='2000' height='1500' patternUnits='userSpaceOnUse'%3E%3Cpath stroke='%238f8f8f' stroke-width='30' stroke-opacity='.1' fill='none' d='M0 0h485M0 50h195M0 150h345M0 250h105M0 100h665M0 200h205M0 300h925M0 350h285M0 450h715M0 400h525M0 500h125M0 550h315M0 650h555M0 750h65M0 600h174M0 700h375M0 800h295M0 850h615M0 950h455M0 900h165M0 1000h255M0 1050h735M0 1150h575M0 1250h465M0 1100h305M0 1200h104M0 1300h195M0 1400h625M0 1350h325M0 1450h115M0 1500h485M505 0h485M215 50h335M365 150h135M125 250h1075M685 100h425M225 200h555M945 300h735M305 350h475M735 450h395M545 400h715M145 500h665M335 550h815M575 650h445M85 750h1095M194 600h676M395 700h254M315 800h525M635 850h445M475 950h85M185 900h1175M275 1000h405M755 1050h475M595 1150h585M485 1250h735M325 1100h585M124 1200h656M215 1300h695M645 1400h475M345 1350h374M135 1450h745M505 1500h485M1010 0h485M570 50h1235M520 150h1225M1220 250h365M1130 100h505M800 200h665M1700 300h205M800 350h825M1150 450h205M1280 400h225M830 500h955M1170 550h495M1040 650h295M1200 750h645M890 600h605M669 700h886M860 800h905M1100 850h425M580 950h265M1380 900h115M700 1000h895M1250 1050h475M1200 1150h255M1240 1250h685M930 1100h385M800 1200h885M930 1300h195M1140 1400h486M739 1350h576M900 1450h305M1010 1500h485M1515 0h485M1825 50h175M1765 150h235M1605 250h395M1655 100h345M1485 200h515M1925 300h75M1645 350h355M1375 450h625M1525 400h475M1805 500h195M1685 550h315M1355 650h645M1865 750h135M1515 600h485M1575 700h425M1785 800h215M1545 850h455M865 950h1135M1515 900h485M1615 1000h385M1745 1050h255M1475 1150h525M1945 1250h55M1335 1100h665M1705 1200h295M1145 1300h855M1646 1400h354M1335 1350h665M1225 1450h775M1515 1500h485'/%3E%3C/pattern%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/* jumbotron styles */
+#heading {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+.display-5 {
+  margin: 5rem auto 0;
+}
+#photo {
+  margin: 3rem auto 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #2eb8b8;
+}
+#heading h3 {
+  margin: 2rem auto;
+}
+#heading p {
+  width: 70%;
+  margin: auto;
+  font-size: 1.15rem;
+  letter-spacing: .1rem;
+}
+.button {
+  margin: 3rem auto;
+  border-radius: 5px;
+  padding: 1em;
+  background: #e68a00;
+  border: none;
+  color: rgb(20,55,70);
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: .75rem 1.5rem;
+}
+.button:hover {
+  background: #ffa31a;
+  text-decoration: none;
+  color: rgb(20,55,70);
+}
+
+
+/* skills section styles */
+#skills h1 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(20,55,70);
+  letter-spacing: .5rem;
+  padding-top: 1rem;
+}
+.icon-box {
+  display: flex;
+  justify-content: center;
+}
+svg {
+  margin: 2rem auto;
+  width: 150px;
+  height: 150px;
+  fill: rgb(43,52,60);
+}
+.icon-accent {
+  fill: #e68a00;
+}
+.skill-div {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.skills-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+.skills-list li {
+  color: rgb(43,52,60);
+  font-weight: bold;
+  margin: .7rem auto;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  width: 60%;
+  background: rgba(230, 138, 0, .5);
+}
+
+
+/* project section styles */
+#projects {
+  width: 100%;
+  margin: 0;
+  margin-right: 0;
+  padding: 20px 5rem;
+}
+#projects a {
+  text-decoration: none;
+  color: inherit;
+}
+#projects h1 {
+  font-family: 'Fira Code', monospace;
+  color: rgba(255,255,255,.75);
+  letter-spacing: .5rem;
+}
+.project:hover {
+  cursor: pointer;
+}
+.project-details h5 {
+  text-align: center;
+  margin: 2rem;
+  border-radius: 10px;
+  padding: .35rem 0;
+  color: white;
+  background: rgba(230, 138, 0, 1);
+  transition: .2s ease-out;
+}
+.project-details h5:hover {
+  letter-spacing: .05rem;
+}
+.card img {
+  padding: .4em;
+}
+.card-body h4 {
+  text-align: center;
+}
+.see-more {
+  width: 50px;
+  height: 50px;
+  margin: .5rem auto 0;
+  display: block;
+  transition: .5s ease-out;
+}
+.see-more path {
+  fill: rgba(230, 138, 0, .75);
+}
+
+
+
+/* chatter section styles */
+#chatter h1 {
+  font-family: 'Fira Code', monospace;
+  color: rgb(20,55,70);
+  letter-spacing: .5rem;
+  padding-top: 4rem;
+}
+#chatter p {
+  font-style: italic;
+}
+.credit {
+  font-style: normal;
+  font-weight: bolder;
+  color: rgba(230, 138, 0, 1);
+}
+
+
+/* footer styles */
+footer {
+  background: rgb(43,52,60);
+  width: 100vw;
+  padding-bottom: 3rem;
+}
+#footer-menu,
+#connect-menu {
+  flex-direction: row;
+  justify-content: center;
+}
+.connect-icon {
+  width: 40px;
+  margin: .5rem 2rem;
+}
+.connect-icon path {
+  fill: #2eb8b8;
+  transition: .5s ease;
+}
+.connect-icon:hover {
+  cursor: pointer;
+}
+#footer-menu a {
+  margin: .5rem 1rem;
+  color: #2eb8b8;
+  transition: .5s ease;
+}
+#footer-menu a:hover {
+  color: white;
+}
+
+
+/* javascript styles */
+
+
+
+@media screen and (min-width: 990px) {
+  .nav-item:first-of-type {
+    margin-top: 0;
+  }
+  .nav-item {
+    margin-left: 1rem;
+  }
+  #connect-button {
+    background: #2eb8b8;
+    color: rgb(43,52,60);
+    border-radius: 5px;
+    transition: .5s ease;
+  }
+  #connect-button:hover {
+    background: #2ef8f8;
+  }
+
+}
