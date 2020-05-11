@@ -1,3 +1,4 @@
+
 body {
   font-family: Ubuntu;
 }
@@ -80,11 +81,15 @@ body {
 
 
 /* skills section styles */
+#skills {
+  margin: 0;
+}
 #skills h1 {
   font-family: 'Fira Code', monospace;
   color: rgb(20,55,70);
   letter-spacing: .5rem;
   padding-top: 1rem;
+  font-size: 2rem;
 }
 .icon-box {
   display: flex;
@@ -137,6 +142,7 @@ svg {
   font-family: 'Fira Code', monospace;
   color: rgba(255,255,255,.75);
   letter-spacing: .5rem;
+  font-size: 2rem;
 }
 .project:hover {
   cursor: pointer;
@@ -160,8 +166,8 @@ svg {
   text-align: center;
 }
 .see-more {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin: .5rem auto 0;
   display: block;
   transition: .5s ease-out;
@@ -178,6 +184,7 @@ svg {
   color: rgb(20,55,70);
   letter-spacing: .5rem;
   padding-top: 4rem;
+  font-size: 2rem;
 }
 #chatter p {
   font-style: italic;
@@ -226,6 +233,9 @@ footer {
 
 
 @media screen and (min-width: 990px) {
+  .navbar {
+    background: none;
+  }
   .nav-item:first-of-type {
     margin-top: 0;
   }
